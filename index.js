@@ -42,3 +42,51 @@ function displayAbout(){
         about.style.display = "none"
     }
 }
+let educators = document.getElementById("educators")
+function displayEducators(){
+    console.log("working")
+    if(educators.style.display === "none"){
+        educators.style.display = "flex"
+    }else if(educators.style.display === "flex"){
+        educators.style.display = "none"
+    }else{
+        educators.style.display = "none"
+    }
+    console.log("edu")
+}
+let subject2 = document.getElementById("subject2")
+function displaySubject2(){
+    console.log("working")
+    if(subject2.style.display === "none"){
+        subject2.style.display = "flex"
+    }else if(subject2.style.display === "flex"){
+        subject2.style.display = "none"
+    }else{
+        subject2.style.display = "none"
+    }
+    console.log("sub")
+}
+let solution2 = document.getElementById("solution2")
+function displaySolution2(){
+    console.log("working")
+    if(solution2.style.display === "none"){
+        solution2.style.display = "flex"
+    }else if(solution2.style.display === "flex"){
+        solution2.style.display = "none"
+    }else{
+        solution2.style.display = "none"
+    }
+    console.log("sub")
+}
+let company = document.getElementById("company")
+function displayCompany(){
+    console.log("working")
+    if(company.style.display === "none"){
+        company.style.display = "flex"
+    }else if(company.style.display === "flex"){
+        company.style.display = "none"
+    }else{
+        company.style.display = "none"
+    }
+    console.log("sub")
+}

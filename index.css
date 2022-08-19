@@ -73,6 +73,11 @@ header{
     font-size: 12px;
     background-color: white;
 }
+.navbar a{
+    color: black;
+    text-decoration: none;
+    
+}
 
 .navbar .logo img{
     width: 160px;
@@ -101,6 +106,56 @@ header{
     margin-left: 1rem;
     font-weight: 700;
 }
+.mobilemenu{
+    display: none;
+}
+
+/* hamburger */
+.hamburger{
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+.hamburger li{
+    list-style: none;
+}
+.ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .hamRotate.active {
+    transform: rotate(45deg);
+  }
+  .hamRotate180.active {
+    transform: rotate(180deg);
+  }
+  .line {
+    fill:none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke:black;
+    stroke-width:5.5;
+    stroke-linecap:round;
+  }
+  .ham1 .top {
+    stroke-dasharray: 40 139;
+  }
+  .ham1 .bottom {
+    stroke-dasharray: 40 180;
+  }
+  .ham1.active .top {
+    stroke-dashoffset: -98px;
+  }
+  .ham1.active .bottom {
+    stroke-dashoffset: -138px;
+  }
+
+/* end of hamburger */
 /* MENU NOT DISPLAYING */
 .whowehelp{
     display: none;
@@ -574,11 +629,51 @@ footer .social{
     .dropdowns{
         display: none;
     }
-    .menu{
+    .menu, .mobilemenu{
+        display: flex;
+        flex-direction: row;
+    }
+    
+
+    .hamburger{
+        display: flex;
+        /* width: 50%; */
+    }
+    .navbar{
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .menu, .mobilemenu{
+        width: 100%;
+    }
+  
+    .menu ul , .mobilemenu ul {
+        width: 100%;
+    }
+
+    .menu ul li, .mobilemenu ul li {
+        display:flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 2rem 0rem;
+        width: 100%;
+
+    }
+    #educators{
+        display: none;
+    }
+    #subject2{
         display: none;
     }
     .intro .container h1{
         font-size: 1.7em;
+    }
+    .mobilemenu ul li a{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
     }
     .background{
         display: none;
