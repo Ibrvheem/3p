@@ -659,12 +659,19 @@ footer .social{
         width: 100%;
 
     }
-    #educators{
-        display: none;
+    .mobilemenu ul li{
+        font-weight: 600;
     }
-    #subject2{
+
+    #educators,#subject2,#solution2,#company,#support2{
         display: none;
+        font-weight: light;
     }
+ 
+
+
+
+    
     .intro .container h1{
         font-size: 1.7em;
     }

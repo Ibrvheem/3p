@@ -90,3 +90,15 @@ function displayCompany(){
     }
     console.log("sub")
 }
+let support2 = document.getElementById("support2")
+function displaySupport2(){
+    console.log("working")
+    if(support2.style.display === "none"){
+        support2.style.display = "flex"
+    }else if(support2.style.display === "flex"){
+        support2.style.display = "none"
+    }else{
+        support2.style.display = "none"
+    }
+    console.log("sub")
+}
