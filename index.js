@@ -102,3 +102,16 @@ function displaySupport2(){
     }
     console.log("sub")
 }
+let openDisplay = document.getElementById("opendisplay")
+function displays(){
+    console.log("working")
+    if(openDisplay.style.display === "none"){
+        openDisplay.style.display = "flex"
+    }else if(openDisplay.style.display === "flex"){
+        openDisplay.style.display = "none"
+    }else{
+        openDisplay.style.display = "none"
+    }
+    console.log("sub")
+}
+

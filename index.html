@@ -15,7 +15,7 @@
                     <div class="logo">
                         <img src="Images/3pl__logo.svg" alt="">
                     </div>
-                    <div class="hamburger">
+                    <div class="hamburger" onclick="displays();return false">
                         <li style="padding-right: 0px;" > 
                         </li>
                         <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="50" onclick="this.classList.toggle('active')" >
@@ -43,80 +43,84 @@
                             <li onclick="displayAbout()">About <img src="Images/angle-down-solid.svg" width="13px" height="13px" alt=""></li></li>
                         </ul>
                     </div>
-                    <div class="menu">
-                        <ul>
-                            <li>Free Trial</li>
-                            <li>Purchase</li>
-                            <li>Sign In</li>
-                        </ul>
+                    <div id="opendisplay" style="display: none;">
+                        <div class="menu">
+                            <ul>
+                                <li>Free Trial</li>
+                                <li>Purchase</li>
+                                <li>Sign In</li>
+                            </ul>
+                        </div>
+                        <div class="mobilemenu">
+                            <ul>
+                                <li onclick="displayEducators(); return false">
+                                    <strong>For Educators</strong>
+                                    <img src="Images/angle-down-solid.svg" width="13px" height="13px" alt="">
+                                </li>
+                                <div id="educators" style="display: none;">
+                                    <ul>
+                                        <li><a href="">District</a></li>
+                                        <li><a href="">School</a></li>
+                                        <li><a href="">Home Users</a></li>
+                                    </ul>
+                                </div>
+                                <li onclick="displaySubject2();return false"><a href="">
+                                    <strong>Subjects</strong>
+                                    <img src="Images/angle-down-solid.svg" width="13px" height="13px" alt="">
+                                </a></li>
+                                <div id="subject2" style="display: none;">
+                                    <ul>
+                                        <li><a href="">Mathematics</a></li>
+                                        <li><a href="">Literacy</a></li>
+                                    </ul>
+                                </div>
+                                <li onclick="displaySolution2();return false"><a href="">
+                                    <strong>Solutions</strong>
+                                    <img src="Images/angle-down-solid.svg" width="13px" height="13px" alt="">
+                                </a></li>
+                                <div id="solution2" style="display: none;">
+                                    <ul>
+                                        <li><a href="">Mathletics</a></li>
+                                        <li><a href="">Nathseeds</a></li>
+                                        <li><a href="">Readiwriter</a></li>
+                                        <li><a href="">Reading Eggs</a></li>
+                                        <li><a href="">Spellodrome</a></li>
+                                    </ul>
+                                </div>
+                                <li onclick="displayCompany(); return false"><a href="">
+                                    <strong>Company</strong>
+                                    <img src="Images/angle-down-solid.svg" width="13px" height="13px" alt="">
+                                </a></li>
+                                <div id="company" style="display: none;">
+                                    <ul>
+                                        <li><a href="">About 3p</a></li>
+                                        <li><a href="">World Maths Day</a></li>
+                                        <li><a href="">Careers</a></li>
+                                        <li><a href="">Awards</a></li>
+                                        <li><a href="">Investors</a></li>
+                                    </ul>
+                                </div>
+                            
+                                <li onclick="displaySupport2();return false"><a href="">
+                                    <strong>Support</strong>
+                                    <img src="Images/angle-down-solid.svg" width="13px" height="13px" alt="">
+                                </a></li>
+                                <div id="support2" style="display: none;">
+                                    <ul>
+                                        <li><a href="">Product Support</a></li>
+                                        <li><a href="">Technical Support</a></li>
+                                        <li><a href="">Webinars</a></li>
+                                        <li><a href="">Classroom Resources</a></li>
+                                        <li><a href="">Curicullum Alignment</a></li>
+                                        <li><a href="">Blog</a></li>
+                                        <li><a href="">FAQs</a></li>
+                                    </ul>
+                                </div>
+                            </ul>
+                        </div>
+
                     </div>
-                    <div class="mobilemenu">
-                        <ul>
-                            <li onclick="displayEducators(); return false">
-                                <strong>For Educators</strong>
-                                <img src="Images/angle-down-solid.svg" width="13px" height="13px" alt="">
-                            </li>
-                            <div id="educators">
-                                <ul>
-                                    <li><a href="">District</a></li>
-                                    <li><a href="">School</a></li>
-                                    <li><a href="">Home Users</a></li>
-                                </ul>
-                            </div>
-                            <li onclick="displaySubject2();return false"><a href="">
-                                <strong>Subjects</strong>
-                                <img src="Images/angle-down-solid.svg" width="13px" height="13px" alt="">
-                            </a></li>
-                            <div id="subject2">
-                                <ul>
-                                    <li><a href="">Mathematics</a></li>
-                                    <li><a href="">Literacy</a></li>
-                                </ul>
-                            </div>
-                            <li onclick="displaySolution2();return false"><a href="">
-                                <strong>Solutions</strong>
-                                <img src="Images/angle-down-solid.svg" width="13px" height="13px" alt="">
-                            </a></li>
-                            <div id="solution2">
-                                <ul>
-                                    <li><a href="">Mathletics</a></li>
-                                    <li><a href="">Nathseeds</a></li>
-                                    <li><a href="">Readiwriter</a></li>
-                                    <li><a href="">Reading Eggs</a></li>
-                                    <li><a href="">Spellodrome</a></li>
-                                </ul>
-                            </div>
-                            <li onclick="displayCompany(); return false"><a href="">
-                                <strong>Company</strong>
-                                <img src="Images/angle-down-solid.svg" width="13px" height="13px" alt="">
-                            </a></li>
-                            <div id="company">
-                                <ul>
-                                    <li><a href="">About 3p</a></li>
-                                    <li><a href="">World Maths Day</a></li>
-                                    <li><a href="">Careers</a></li>
-                                    <li><a href="">Awards</a></li>
-                                    <li><a href="">Investors</a></li>
-                                </ul>
-                            </div>
-                        
-                            <li onclick="displaySupport2();return false"><a href="">
-                                <strong>Support</strong>
-                                <img src="Images/angle-down-solid.svg" width="13px" height="13px" alt="">
-                            </a></li>
-                            <div id="support2">
-                                <ul>
-                                    <li><a href="">Product Support</a></li>
-                                    <li><a href="">Technical Support</a></li>
-                                    <li><a href="">Webinars</a></li>
-                                    <li><a href="">Classroom Resources</a></li>
-                                    <li><a href="">Curicullum Alignment</a></li>
-                                    <li><a href="">Blog</a></li>
-                                    <li><a href="">FAQs</a></li>
-                                </ul>
-                            </div>
-                        </ul>
-                    </div>
+                    
                     
                 </div>
                 <div class="displayer">
