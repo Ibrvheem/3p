@@ -646,7 +646,12 @@ footer .social{
     .menu, .mobilemenu{
         width: 100%;
     }
-  
+    #opendisplay{
+        display: none;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+ 
     .menu ul , .mobilemenu ul {
         width: 100%;
     }
@@ -655,12 +660,19 @@ footer .social{
         display:flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        margin: 2rem 0rem;
+        margin: 1rem 0rem;
         width: 100%;
 
     }
     .mobilemenu ul li{
         font-weight: 600;
+    }
+    .mobilemenu ul li a{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
     }
 
     #educators,#subject2,#solution2,#company,#support2{
@@ -675,13 +687,7 @@ footer .social{
     .intro .container h1{
         font-size: 1.7em;
     }
-    .mobilemenu ul li a{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-    }
+ 
     .background{
         display: none;
     }
