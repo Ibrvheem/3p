@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0; 
     overflow-x: hidden;
+    scroll-behavior: smooth;
                                      
 }
 .fixer{
@@ -54,7 +55,7 @@ header{
     /* background-color: red; */
     /* height: 100vh; */
     height: auto;
-    width: 984px;
+    width: 80%;
 
 }
 .container h2{
@@ -243,16 +244,12 @@ section.intro{
     justify-content: center;
     height: 840.58px;
 }
-section.intro .content{
-    /* width: 488px; */
-}
 section.intro h1{
     height: auto;
     width: 700px;
     margin-bottom: 1rem;
     font-weight: 700;
     font-size: 3rem;
-    line-height: 1.166667;
     padding-top: 3rem;
 }
 section.intro h1 span{
@@ -260,9 +257,8 @@ section.intro h1 span{
 }
 section.intro p{
     width:451px;
-    height: 72px;
+    height: auto;
     /* width: 68.75%; */
-    height: 81px;
     margin: 2rem 0;
 }
 
@@ -274,28 +270,18 @@ section.intro ul.buttons li{
 .buttons{
     display: flex;
 }
-.learnmore{
+.learnmore, .try{
     height: 50px;
     width: 140px;
-    background-color: red;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 2em;
     text-align: center;
     background-color:#015f4e;
-}
-
-.try{
-    height: 50px;
-    width: 140px;
-    background-color: red;
     margin-left: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 2em;
-    background-color:#015f4e;
+    margin-bottom: 10px;
+
 }
 .buttons a{
     text-decoration: none;
@@ -325,24 +311,13 @@ section.intro ul.buttons li{
     width: 140%;
 }
 section.teachingCommunity{
-    /* height: 568px; */
-    /* background-color: red; */
-    padding: 2rem;
+    padding: 5rem;
     display: flex;
     justify-content: center;
-
-
-    /* background-image: url("assets/wave-divider.svg");
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size:auto;
-    padding-bottom: 6rem; */
-
 }
 
 section.teachingCommunity h1{
     font-size: 2.5em;
-    line-height: 1.2;
     margin-bottom: 4rem;
     text-align: center;
     overflow: hidden;
@@ -397,7 +372,6 @@ section.teachingCommunity h1{
     color: white;
     font-weight: bold;
     text-decoration: none;
-    line-height: 1.5em;
     font-size: 0.9rem;
 
 
@@ -509,25 +483,20 @@ section.second .container .writings{
 
 }
 section.second .container .writings p{
-    height: 108px;
+    height: auto;
 }
 
 section h5{
     margin: 2em 0;
     font-size: 0.7rem;
     font-weight: lighter;
-    /* height: 37px; */
-    /* width: 111px; */
     font-weight: 700;
     line-height: 1;
     background-color: rgb(131 135 137 / 25%);
-    /* background-color: rgba(255, 255, 255, .2); */
     padding: 1em 1.25em;
     padding-bottom: 1em;
     border-radius: 2em;
     box-sizing: border-box;
-
-
 }
 section.second .learnmore{
     margin-top: 1em;
@@ -536,7 +505,9 @@ section a{
     color: white;
     font-weight: bold;
     text-decoration: none;
-    line-height: 1.5em;
+}
+#pricing{
+    padding-top: 5rem;
 }
 .awards{
     display: flex;
@@ -624,7 +595,7 @@ footer .social{
 }
 @media screen and (max-width: 430px){
     .container{
-        width: 360px;
+        width: 90%;
     }
     .dropdowns{
         display: none;
@@ -689,17 +660,36 @@ footer .social{
     }
  
     .background{
-        display: none;
+        display: block;
+        width: 100%;
     }
-    .intro .container ul.buttons{
+    .background img{
+        width: 100%;
+        height: 100%;
+    }
+    .background img:nth-child(1){
+        position: absolute;
+        right: 0%;
+        top: 85%;
+        width: 100%;
+        max-width: 128rem;
+        height: auto;
+        
+    }
+    .background img:nth-child(2){
+        float: left;
+        margin-top: -1rem;
+        margin-bottom: 7rem;
+        z-index: 1;
+        position: absolute;
+        right: 0%;
+        top: 60%;
+        width: 80%;
+        height: auto;
+    }
+    .intro .container .buttons{
         display: flex;
         flex-direction: column;
-    }
-    .intro .container ul.buttons .learnmore{
-        margin-bottom: 15px;
-    } 
-    .intro .container ul.buttons .try{
-        margin: 0;
     }
     .backgrounddivider .container .icons{
         display: flex;
@@ -719,10 +709,21 @@ footer .social{
     .backgrounddivider .container .icons .item{
         width: 100%;
     }
+    section.teachingCommunity{
+        padding: 3rem;
+        display: flex;
+        justify-content: center;
+    }
 
     section.teachingCommunity h1{
         font-size: 1.8em;
         margin-bottom: 0;
+    }
+    section.intro p{
+        width:100%;
+        /* width: 68.75%; */
+        margin: 2rem 0;
+        height: auto;
     }
     .sectionheader h2{
         font-size: 1.8em;
@@ -764,10 +765,7 @@ footer .social{
         color: white;
         font-weight: bold;
         text-decoration: none;
-        line-height: 1.5em;
-        font-size: 0.76rem;
-    
-    
+        font-size: 0.76rem;    
     }
     .fixer{
         background-image: url('Images/wave-divider.svg');
@@ -787,6 +785,9 @@ footer .social{
     section.second .container .writings h3{
         font-size: 1.2em;
     }
+    #pricing{
+        padding-top: 3rem;
+    }
   
     .award{
         width: 33.3%;
@@ -796,7 +797,7 @@ footer .social{
     .awards .container{
         flex-wrap: wrap;
     }
-    .learnmore {
+    .learnmore, .try {
         height: 40px;
         width: 120px;
         background-color: red;
@@ -811,7 +812,6 @@ footer .social{
         color: white;
         font-weight: bold;
         text-decoration: none;
-        line-height: 1.5em;
         font-size: 0.76em;
     }
     footer .container {

@@ -43,7 +43,7 @@
                             <li onclick="displayAbout()">About <img src="Images/angle-down-solid.svg" width="13px" height="13px" alt=""></li></li>
                         </ul>
                     </div>
-                    <div id="opendisplay" style="display: none;">
+                    <div id="opendisplay">
                         <div class="menu">
                             <ul>
                                 <li>Free Trial</li>
@@ -64,20 +64,20 @@
                                         <li><a href="">Home Users</a></li>
                                     </ul>
                                 </div>
-                                <li onclick="displaySubject2();return false"><a href="">
+                                <li onclick="displaySubject2();return false">
                                     <strong>Subjects</strong>
                                     <img src="Images/angle-down-solid.svg" width="13px" height="13px" alt="">
-                                </a></li>
+                                </li>
                                 <div id="subject2" style="display: none;">
                                     <ul>
                                         <li><a href="">Mathematics</a></li>
                                         <li><a href="">Literacy</a></li>
                                     </ul>
                                 </div>
-                                <li onclick="displaySolution2();return false"><a href="">
+                                <li onclick="displaySolution2();return false">
                                     <strong>Solutions</strong>
                                     <img src="Images/angle-down-solid.svg" width="13px" height="13px" alt="">
-                                </a></li>
+                                </li>
                                 <div id="solution2" style="display: none;">
                                     <ul>
                                         <li><a href="">Mathletics</a></li>
@@ -87,10 +87,10 @@
                                         <li><a href="">Spellodrome</a></li>
                                     </ul>
                                 </div>
-                                <li onclick="displayCompany(); return false"><a href="">
+                                <li onclick="displayCompany(); return false">
                                     <strong>Company</strong>
                                     <img src="Images/angle-down-solid.svg" width="13px" height="13px" alt="">
-                                </a></li>
+                                </li>
                                 <div id="company" style="display: none;">
                                     <ul>
                                         <li><a href="">About 3p</a></li>
@@ -101,10 +101,10 @@
                                     </ul>
                                 </div>
                             
-                                <li onclick="displaySupport2();return false"><a href="">
+                                <li onclick="displaySupport2();return false">
                                     <strong>Support</strong>
                                     <img src="Images/angle-down-solid.svg" width="13px" height="13px" alt="">
-                                </a></li>
+                                </li>
                                 <div id="support2" style="display: none;">
                                     <ul>
                                         <li><a href="">Product Support</a></li>
@@ -262,31 +262,29 @@
                     </h1>
                     <p>
                         Create learning experiences that stick with blended learning
-                        tools for mathematics and literacy. 
-                        Delivered from you, to your learner, wherever they are.
+                        tools for mathematics and literacy. Delivered from you, to your learner, wherever they are.
                     </p>
-                    <ul class="buttons">
+                    <div class="buttons">
                         <div class="learnmore">
-                            <a href="#">Learn More</a>
+                            <a href="#teachingCommunity">Learn More</a>
                         </div>
                         <div class="try">
-                            <a href="#">Try for free</a>
+                            <a href="#pricing">Try for free</a>
                         </div>
-    
-                        <li</li>
-                    </ul>
+                    </div>
+
                 </div>
             </div>
         </section>
-        <div class="background">
-            <img src="Images/wave-home.svg" width="2560" height="943" sizes = "784px" alt="">
-            <img src="Images/main-back.svg" width="700" height="750" alt="">
+        <div class="background"  >
+            <img src="Images/wave-home.svg" width="2560" height="943" sizes = "784px" style = "z-index: -1;"  alt="">
+            <img src="Images/main-back.svg" width="700" height="750" style = "z-index: -1;" alt="">
         </div>
 
     </main>
 
     <div class="fixer">
-        <section class="teachingCommunity">
+        <section  class="teachingCommunity" id = "teachingCommunity">
             <div class="container">
                 <div class="header">
                     <h1>Our blended teaching community</h1>
@@ -356,7 +354,7 @@
                             <h3>Parents and Home Users</h3>
                             <p>Bring the love of learning home with mathematics and literacy programs.</p>
                             <div class="button">
-                                <a href="#">Learn More</a>
+                                <a href="#teachingCommunity">Learn More</a>
                             </div>
                         </div>
 
@@ -526,7 +524,7 @@
         </div>
         <div class="fixer">
             <div class="sectionheader">
-                <div class="container">
+                <div class="container" id = "pricing">
                     <h2>
                         Discover pricing options
                     </h2>
@@ -583,6 +581,22 @@
                 </div>
             </section>    
         </div>
+        <section class="intro" style="height: auto;">
+            <div class="container">
+                <div class="content">
+                    <h1>
+                        <span>Blended teaching software</span><br>
+                        for class, home, and <br>
+                        everywhere in between
+                    </h1>
+                    <p>
+                        Create learning experiences that stick with blended learning
+                        tools for mathematics and literacy. 
+                        Delivered from you, to your learner, wherever they are.
+                    </p>
+                </div>
+            </div>
+        </section>
         
         <footer>
             <div class="container">
