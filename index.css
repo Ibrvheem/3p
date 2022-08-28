@@ -100,12 +100,16 @@ header{
 .dropdowns ul li img{
     margin-left: 0.5em;
 }
-.dropdowns ul li{
-}
+
 .menu ul li{
     display: inline;
     margin-left: 1rem;
     font-weight: 700;
+}
+.menuDesktop ul li{ 
+    display: inline;
+    margin-left: 1rem;
+    font-weight: 700;    
 }
 .mobilemenu{
     display: none;
@@ -622,7 +626,9 @@ footer .social{
         width: 100%;
         flex-wrap: wrap;
     }
- 
+    .menuDesktop{
+        display: none;
+    }
     .menu ul , .mobilemenu ul {
         width: 100%;
     }
@@ -776,8 +782,6 @@ footer .social{
     }
     section.second .items{
         width: 100%;
-    }
-    section.second{
     }
     section.second .container{
         flex-wrap: wrap;
