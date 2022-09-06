@@ -73,7 +73,6 @@ header{
     font-weight: 900;
     font-size: 12px;
     background-color: white;
-    cursor: pointer;
 }
 .navbar a{
     color: black;
@@ -243,143 +242,45 @@ header{
 
 }
 /* END */
-section.intro{
-    padding-top: 75px;
+main{
     display: flex;
     justify-content: center;
-    height: 840.58px;
-}
-section.intro h1{
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    width: 100%;
     height: auto;
-    width: 700px;
-    margin-bottom: 1rem;
-    font-weight: 700;
+
+}
+main .mainwritings{
+    text-align: center;
+    /* padding: 0px 110px; */
+    margin:2rem 0;
+
+}
+main .mainwritings h1{
     font-size: 3rem;
-    padding-top: 3rem;
-}
-section.intro h1 span{
-    color: #015f4e;
-}
-section.intro p{
-    width:451px;
-    height: auto;
-    /* width: 68.75%; */
-    margin: 2rem 0;
-}
-
-section.intro ul.buttons li{
-    display: inline;
-    
-  
-}
-.buttons{
-    display: flex;
-}
-.learnmore, .try{
-    height: 50px;
-    width: 140px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 2em;
-    text-align: center;
-    background-color:#015f4e;
-    margin-left: 1rem;
-    margin-bottom: 10px;
+    padding: 0px 250px;
+    margin: 1.5rem auto 1.25rem;
 
 }
-.buttons a{
-    text-decoration: none;
-    color: white;
-    font-weight:400 ;
-    line-height: 1;
-    text-align: center;
-}
-.background img:nth-child(1){
-    position: absolute;
-    right: -30%;
-    top: 209px;
-    width: 160%;
-    max-width: 128rem;
-    height: auto;
-    
-}
-.background img:nth-child(2){
-    float: left;
-    margin-top: -1rem;
-    margin-bottom: 7rem;
-    width: 70.83333%;
-    z-index: 1;
-    position: absolute;
-    right: -32%;
-    top: 130px;
-    width: 140%;
-}
-section.teachingCommunity{
-    padding: 5rem;
-    display: flex;
-    justify-content: center;
-}
-
-section.teachingCommunity h1{
-    font-size: 2.5em;
-    margin-bottom: 4rem;
-    text-align: center;
-    overflow: hidden;
-}
-.container .icons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-.icons h3{
+main .mainwritings h3{
     font-size: 1.5rem;
-    line-height: 1.25;
+    padding: 0px 250px;
+    margin: 1.5rem auto 1.25rem;
+
+
 }
-.earth, .school, .study, .grad{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.container .item{
-    width: 33%;
+.image{
+    height: auto;
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:center;
     flex-direction: column;
-
 }
-.container .item p{
-    margin: 1.5rem 0;
-}
-.container .item .button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 159px;
-    height: 56px;
-    border-radius: 35px;
-    background-color: #015f4e;
-    margin: 1.5rem 0;
-
-    
-}
-.container .item  img{
-    height: 270px;
-    width: 270px;
-    border-radius: 20px;
-    margin-bottom: 2rem;
-
-}
-
-.button a{
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 0.9rem;
-
-
+main img:nth-child(2){
+    position: absolute;
 }
 section .button{
     background-color:#015f4e ;
@@ -415,24 +316,19 @@ section .button{
     justify-content: center;
     flex-direction: column;
 }
-.image{
-    width: 50%;
-    height: auto;
-    display: flex;
-    align-items: center;
-}
+
 .writings h4{
     color: #015f4e;
 }
 .writings h2{
     font-size: 2em;
     font-weight: light;
-    margin: 1em 0em;
+    margin: 0.5em 0em;
 }
 .writings h3{
     font-size: 1.5em;
     font-weight: light;
-    margin: 1em 0em;
+    margin: 0.5em 0em;
 }
 .writings p{
     margin-bottom: 1em;
@@ -454,8 +350,9 @@ section.second{
     height: auto;
 }
 section.second .items{
+    display: flex;
     height: auto;
-    width: 33.3%;
+    width: 100%;
     margin-right: 30px;
     margin: 20px 30px;
     padding: 40px 0;
@@ -464,26 +361,33 @@ section.second .items{
     -webkit-box-shadow: 0 0 1em 0 rgb(131 135 137 / 25%);
 
 }
+section.second .items h4{
+    color: black;
+    width: 100%;
+}
 section.second .container{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
-section.second .image{
+section.second .images{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
     width: 100%;
+    margin-left: 5%;
 }
-section.second img{
+/* section.second img{
     height: 108px;
     width: 108px;
-}
+} */
 section.second .container .writings{
     padding: 10px 37px;
     width: 100%;
-    text-align: center;
+    text-align: left;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     box-sizing: border-box;
 
 }
@@ -492,7 +396,7 @@ section.second .container .writings p{
 }
 
 section h5{
-    margin: 2em 0;
+    margin: 1em 0;
     font-size: 0.7rem;
     font-weight: lighter;
     font-weight: 700;
@@ -502,6 +406,7 @@ section h5{
     padding-bottom: 1em;
     border-radius: 2em;
     box-sizing: border-box;
+    width: 105px;
 }
 section.second .learnmore{
     margin-top: 1em;
@@ -511,34 +416,30 @@ section a{
     font-weight: bold;
     text-decoration: none;
 }
-#pricing{
-    padding-top: 5rem;
+section.second .learnmore{
+    margin-top: 1em;
 }
-.awards{
+.buttons{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.award{
-    filter: grayscale(100%);
-    opacity: .5;
 }
 
-.awards .button{
-    width: auto;
-    padding: 15px;
-    box-sizing: border-box;
-    margin-top: 2em;
-    height: auto;
+.learnmore a{
+    color: white;
 }
-.awards .container{
+.learnmore, .try{
+    height: 50px;
+    width: 140px;
+    position: relative;
+    bottom: 0;
     display: flex;
-    justify-content: space-between;
-}
-.award img{
-    height: 54px;
-    width: auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2em;
+    text-align: center;
+    background-color:#015f4e;
+    margin-right: 1rem;
+    margin-bottom: 10px;
+
 }
 footer{
     display: flex;
@@ -657,167 +558,84 @@ footer .social{
         display: none;
         font-weight: light;
     }
- 
-
-
-
-    
-    .intro .container h1{
-        font-size: 1.7em;
-    }
- 
-    .background{
-        display: block;
-        width: 100%;
-    }
-    .background img{
-        width: 100%;
-        height: 100%;
-    }
-    .background img:nth-child(1){
-        position: absolute;
-        right: 0%;
-        top: 85%;
-        width: 100%;
-        max-width: 128rem;
-        height: auto;
-        
-    }
-    .background img:nth-child(2){
-        float: left;
-        margin-top: -1rem;
-        margin-bottom: 7rem;
-        z-index: 1;
-        position: absolute;
-        right: 0%;
-        top: 60%;
-        width: 80%;
-        height: auto;
-    }
-    .intro .container .buttons{
-        display: flex;
-        flex-direction: column;
-    }
-    .backgrounddivider .container .icons{
-        display: flex;
-        flex-direction: column;
-    }
-    .backgrounddivider .container .icons h3{
-        margin-top: 10px;
-        margin-bottom: 5px;
-    }
-    .backgrounddivider .container .icons p{
-        margin-top: 5px;
-        margin-bottom: 20px;
-    }
-
-
-
-    .backgrounddivider .container .icons .item{
-        width: 100%;
-    }
-    section.teachingCommunity{
-        padding: 3rem;
+    main{
         display: flex;
         justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 100px;
+        width: 100%;
+    
     }
-
-    section.teachingCommunity h1{
-        font-size: 1.8em;
-        margin-bottom: 0;
+    main .mainwritings{
+        text-align: center;
+        padding: 0px 0px;
     }
-    section.intro p{
-        width:100%;
-        /* width: 68.75%; */
-        margin: 2rem 0;
-        height: auto;
+    main .mainwritings h1{
+        font-size: 2rem;
+        padding: 0px;
+        margin: 1.5rem auto 1.25rem;
+    
+    }
+    main .mainwritings h3{
+        font-size: 1rem;
+        padding: 0px;
+        margin: 1.5rem auto 1.25rem;
+    }  
+    main .image{
+        width: 100%;
+    }
+    main img{
+        width: 100%;
+    } 
+    main img:nth-child(2){
+        width: 300px;
     }
     .sectionheader h2{
         font-size: 1.8em;
         padding: 0;
     }
-    section.first .container{
-        flex-wrap: wrap;
-    }
-    .image{
-        width: 100%;
-    }
-    .image img{
-        width: 100%;
-    }
-    section.first .writings{
-        width: 100%;
-    }
+
     .writings h2{
         font-size: 1.5em;
         font-weight: light;
         margin: 1em 0em;
     }
     .writings p{
-    margin-bottom: 1em;
-    font-size: 0.76em;
-    }
-    section .button{
-        background-color:#015f4e ;
-        border-radius: 2em;
-        height: 40px;
-        width: 150px;
-        border: 2px solid #015f4e;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 2em;
-    }
-    .button a{
-        color: white;
-        font-weight: bold;
-        text-decoration: none;
-        font-size: 0.76rem;    
-    }
-    .fixer{
-        background-image: url('Images/wave-divider.svg');
-        background-repeat:no-repeat ;
-        background-position: bottom left;
-        background-size: 180%;
-        padding-bottom: 2rem;
+        margin-bottom: 1em;
+        font-size: 0.76em;
     }
     section.second .items{
         width: 100%;
+        display: block;
+
     }
     section.second .container{
+
+        flex-direction: row;
         flex-wrap: wrap;
     }
     section.second .container .writings h3{
         font-size: 1.2em;
     }
-    #pricing{
-        padding-top: 3rem;
+    section.second .container .writings p{
+        font-size: 1em;
     }
-  
-    .award{
-        width: 33.3%;
-        display: flex;
-        justify-content: space-between;
+    section.second .items h4{
+        font-size: 0.8em;
     }
-    .awards .container{
+
+    section.second .images:nth-child(1) img:nth-child(1){
+        height: auto;
+        width: 150px;
+    }
+    section.second .images:nth-child(1) img:nth-child(2){
+        height: auto;
+        width: 300px;
+        margin: 20px 0px;
+    }
+    
+    .buttons{
         flex-wrap: wrap;
-    }
-    .learnmore, .try {
-        height: 40px;
-        width: 120px;
-        background-color: red;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 2em;
-        text-align: center;
-        background-color: #015f4e;
-    }
-    section a{
-        color: white;
-        font-weight: bold;
-        text-decoration: none;
-        font-size: 0.76em;
     }
     footer .container {
         display: flex;
@@ -834,7 +652,8 @@ footer .social{
         justify-content: space-between;
         flex-direction: column;
     }
-    
+
+
 
 
 }
