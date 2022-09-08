@@ -177,7 +177,7 @@ header{
     border-radius: 0.75em;
 }
 .whowehelp strong{
-    line-height: 1;
+    line-height: auto;
 }
 .column p, .boxes p, .subject p{
     color: #838789;
@@ -400,7 +400,7 @@ section h5{
     font-size: 0.7rem;
     font-weight: lighter;
     font-weight: 700;
-    line-height: 1;
+    line-height: auto;
     background-color: rgb(131 135 137 / 25%);
     padding: 1em 1.25em;
     padding-bottom: 1em;
