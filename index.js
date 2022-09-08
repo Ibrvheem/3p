@@ -21,11 +21,6 @@ function displayHelp(){
         solutions.style.display = "none";
         support.style.display = "none";
         about.style.display = "none";
-        educators.style.display = "none";
-        subject2.style.display = "none";
-        solution2.style.display = "none";
-        company.style.display = "none";
-        support2.style.display = "none";
         openDisplay.style.display = "none";
     }else if(help.style.display === "flex"){
         help.style.display = "none"
@@ -41,11 +36,6 @@ function displaySolution(){
         solutions.style.display = "flex";
         support.style.display = "none";
         about.style.display = "none";
-        educators.style.display = "none";
-        subject2.style.display = "none";
-        solution2.style.display = "none";
-        company.style.display = "none";
-        support2.style.display = "none";
         openDisplay.style.display = "none";
         }else if(solutions.style.display === "flex"){
         solutions.style.display = "none"
@@ -61,11 +51,6 @@ function displaySupport(){
         solutions.style.display = "none";
         support.style.display = "flex";
         about.style.display = "none";
-        educators.style.display = "none";
-        subject2.style.display = "none";
-        solution2.style.display = "none";
-        company.style.display = "none";
-        support2.style.display = "none";
         openDisplay.style.display = "none";
         }else if(support.style.display === "flex"){
         support.style.display = "none"
@@ -81,11 +66,6 @@ function displayAbout(){
         solutions.style.display = "none";
         support.style.display = "none";
         about.style.display = "flex";
-        educators.style.display = "none";
-        subject2.style.display = "none";
-        solution2.style.display = "none";
-        company.style.display = "none";
-        support2.style.display = "none";
         openDisplay.style.display = "none";
         }else if(about.style.display === "flex"){
         about.style.display = "none"
@@ -96,17 +76,12 @@ function displayAbout(){
 function displayEducators(){
     console.log("working")
     if(educators.style.display === "none"){
-        help.style.display = "none";
-        solutions.style.display = "none";
-        support.style.display = "none";
-        about.style.display = "none";
-        educators.style.display = "flex";
-        subject2.style.display = "none";
-        solution2.style.display = "none";
-        company.style.display = "none";
-        support2.style.display = "none";
-        openDisplay.style.display = "none";
-        }else if(educators.style.display === "flex"){
+        educators.style.display = "flex"
+        subject2.style.display = "none"
+        solution2.style.display = "none"
+        company.style.display = "none"
+        support2.style.display = "none"
+    }else if(educators.style.display === "flex"){
         educators.style.display = "none"
     }else{
         educators.style.display = "none"
@@ -116,17 +91,12 @@ function displayEducators(){
 function displaySubject2(){
     console.log("working")
     if(subject2.style.display === "none"){
-        help.style.display = "none";
-        solutions.style.display = "none";
-        support.style.display = "none";
-        about.style.display = "none";
-        educators.style.display = "none";
-        subject2.style.display = "flex";
-        solution2.style.display = "none";
-        company.style.display = "none";
-        support2.style.display = "none";
-        openDisplay.style.display = "none";
-        }else if(subject2.style.display === "flex"){
+        educators.style.display = "none"
+        subject2.style.display = "flex"
+        solution2.style.display = "none"
+        company.style.display = "none"
+        support2.style.display = "none"
+    }else if(subject2.style.display === "flex"){
         subject2.style.display = "none"
     }else{
         subject2.style.display = "none"
@@ -136,17 +106,12 @@ function displaySubject2(){
 function displaySolution2(){
     console.log("working")
     if(solution2.style.display === "none"){
-        help.style.display = "none";
-        solutions.style.display = "none";
-        support.style.display = "none";
-        about.style.display = "none";
-        educators.style.display = "none";
-        subject2.style.display = "none";
-        solution2.style.display = "flex";
-        company.style.display = "none";
-        support2.style.display = "none";
-        openDisplay.style.display = "none";
-        }else if(solution2.style.display === "flex"){
+        educators.style.display = "none"
+        subject2.style.display = "none"
+        solution2.style.display = "flex"
+        company.style.display = "none"
+        support2.style.display = "none"
+    }else if(solution2.style.display === "flex"){
         solution2.style.display = "none"
     }else{
         solution2.style.display = "none"
@@ -156,18 +121,12 @@ function displaySolution2(){
 function displayCompany(){
     console.log("working")
     if(company.style.display === "none"){
-
-        help.style.display = "none";
-        solutions.style.display = "none";
-        support.style.display = "none";
-        about.style.display = "none";
-        educators.style.display = "none";
-        subject2.style.display = "none";
-        solution2.style.display = "none";
-        company.style.display = "flex";
-        support2.style.display = "none";
-        openDisplay.style.display = "none";
-        }else if(company.style.display === "flex"){
+        educators.style.display = "none"
+        subject2.style.display = "none"
+        solution2.style.display = "none"
+        company.style.display = "flex"
+        support2.style.display = "none"
+    }else if(company.style.display === "flex"){
         company.style.display = "none"
     }else{
         company.style.display = "none"
@@ -177,18 +136,12 @@ function displayCompany(){
 function displaySupport2(){
     console.log("working")
     if(support2.style.display === "none"){
-
-        help.style.display = "none";
-        solutions.style.display = "none";
-        support.style.display = "none";
-        about.style.display = "none";
-        educators.style.display = "none";
-        subject2.style.display = "flex";
-        solution2.style.display = "none";
-        company.style.display = "none";
-        support2.style.display = "none";
-        openDisplay.style.display = "none";
-        }else if(support2.style.display === "flex"){
+        educators.style.display = "none"
+        subject2.style.display = "none"
+        solution2.style.display = "none"
+        company.style.display = "none"
+        support2.style.display = "flex"
+    }else if(support2.style.display === "flex"){
         support2.style.display = "none"
     }else{
         support2.style.display = "none"
@@ -198,18 +151,8 @@ function displaySupport2(){
 function displays(){
     console.log("working")
     if(openDisplay.style.display === "none"){
-
-        help.style.display = "none";
-        solutions.style.display = "none";
-        support.style.display = "none";
-        about.style.display = "none";
-        educators.style.display = "none";
-        subject2.style.display = "none";
-        solution2.style.display = "none";
-        company.style.display = "none";
-        support2.style.display = "none";
-        openDisplay.style.display = "flex";
-        }else if(openDisplay.style.display === "flex"){
+        openDisplay.style.display = "flex"
+    }else if(openDisplay.style.display === "flex"){
         openDisplay.style.display = "none"
     }else{
         openDisplay.style.display = "none"
