@@ -1,5 +1,6 @@
 let help = document.getElementById("help")
-let navbar = document.getElementById("navbar")
+let header = document.querySelector("header")
+let navbar = document.querySelector(".navbar")
 let solutions = document.getElementById("solutions")
 let support = document.getElementById("support")
 let about = document.getElementById("about")
@@ -9,10 +10,14 @@ let solution2 = document.getElementById("solution2")
 let company = document.getElementById("company")
 let support2 = document.getElementById("support2")
 let openDisplay = document.getElementById("opendisplay")
+let arrowdown = document.querySelector("#arrowdown")
+let arrowdown2= document.querySelector("#arrowdown2")
+let arrowdown3 = document.querySelector("#arrowdown3")
+let arrowdown4 =  document.querySelector("#arrowdown4")
+let secondLogo = document.getElementById("secondlogo")
+let defaultLogo = document.getElementById("defaultlogo")
 
-
-
-
+let logo = document.querySelector(".logo")
 
 
 function displayHelp(){
@@ -160,5 +165,36 @@ function displays(){
     console.log("sub")
 }
 
+function navBgColor(event){
+    let scrollValue = window.scrollY;
+    if (scrollValue > 20){
+        event.target.color = "#green";
+        header.style.background = 'white';
+        navbar.style.color = "black"
+        arrowdown.src = "Images/angle-down-solid-green.svg"
+        arrowdown2.src = "Images/angle-down-solid-green.svg"
+        arrowdown3.src = "Images/angle-down-solid-green.svg"
+        arrowdown4.src = "Images/angle-down-solid-green.svg"
+        secondLogo.style.display = "none"
+        defaultLogo.style.display = "flex"
+        
 
+
+    }else if (scrollValue < 20){
+        header.style.background = 'transparent'
+        secondLogo.style.display = "flex"
+        defaultLogo.style.display = "none"
+        navbar.style.color = 'white'
+        arrowdown.src = "Images/angle-down-solid.svg"
+        arrowdown2.src = "Images/angle-down-solid.svg"
+        arrowdown3.src = "Images/angle-down-solid.svg"
+        arrowdown4.src = "Images/angle-down-solid.svg"
+
+
+
+
+    }
+    console.log(scrollValue)
+}
+window.addEventListener('scroll', navBgColor)
 

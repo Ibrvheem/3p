@@ -7,6 +7,9 @@
     scroll-behavior: smooth;
                                      
 }
+svg .secondlogo{
+    fill: red
+}
 .fixer{
     background-image: url('Images/wave-divider.svg');
     background-repeat:no-repeat ;
@@ -39,6 +42,9 @@ figure.background img{
 
 .imagebackground{
     display: inline-block;
+}
+img .arrowdown{
+    
 }
 
 header{
