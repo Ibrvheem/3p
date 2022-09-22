@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="get-a-quote.css">
+</head>
+<body>
+    <header id = "navbar">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="Images/3pl__logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="hamburger" onclick="displays();return false">
+                    <li style="padding-right: 0px;" > 
+                    </li>
+                    <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="50" onclick="this.classList.toggle('active')" >
+                        <path
+                                class="line top" 
+                                d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                        <path
+                                class="line middle"
+                                d="m 30,50 h 40" />
+                        <path
+                                class="line bottom"
+                                d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+                    </svg> 
+                </div>
+                <div class="dropdowns">
+                    <ul>
+                        <li onclick="displayHelp()">Who We Help <img src="Images/angle-down-solid-green.svg" width="13px" height="13px" alt=""></li>
+                            <div class="display">
+
+                            </div>
+                        <li onclick="displaySolution()">Our Services<img src="Images/angle-down-solid-green.svg" width="13px" height="13px" alt=""></li> </li>
+                        <li onclick="displaySupport()">Testimonials <img src="Images/angle-down-solid-green.svg" width="13px" height="13px" alt=""></li></li>
+                        <li onclick="displayAbout()">About Us<img src="Images/angle-down-solid-green.svg" width="13px" height="13px" alt=""></li></li>
+                    </ul>
+                </div>
+                <div class="menuDesktop">
+                    <ul>
+                        <li>Gallery</li>
+                        <li>Recongnitions</li>
+                        <li>Blog</li>
+                    </ul>
+                </div>
+                
+                <div id="opendisplay" style="display: none;">
+                    <div class="menu">
+                        <ul>
+                            <li>Gallery</li>
+                            <li>Recongnitions</li>
+                            <li>Blog</li>
+                        </ul>
+                    </div>
+                    <div class="mobilemenu">
+                        <ul>
+                            <li onclick="displayEducators(); return true">
+                                <strong>For Educators</strong>
+                                <img src="Images/angle-down-solid.svg" width="13px" height="13px" alt="">
+                            </li>
+                            <div id="educators" style="display: none;">
+                                <ul>
+                                    <li><a href="">District</a></li>
+                                    <li><a href="">School</a></li>
+                                    <li><a href="">Home Users</a></li>
+                                </ul>
+                            </div>
+                            <li onclick="displaySubject2();return false">
+                                <strong>Subjects</strong>
+                                <img src="Images/angle-down-solid.svg" width="13px" height="13px" alt="">
+                            </li>
+                            <div id="subject2" style="display: none;">
+                                <ul>
+                                    <li><a href="">Mathematics</a></li>
+                                    <li><a href="">Literacy</a></li>
+                                </ul>
+                            </div>
+                            <li onclick="displaySolution2();return false">
+                                <strong>Solutions</strong>
+                                <img src="Images/angle-down-solid.svg" width="13px" height="13px" alt="">
+                            </li>
+                            <div id="solution2" style="display: none;">
+                                <ul>
+                                    <li><a href="">Mathletics</a></li>
+                                    <li><a href="">Nathseeds</a></li>
+                                    <li><a href="">Readiwriter</a></li>
+                                    <li><a href="">Reading Eggs</a></li>
+                                    <li><a href="">Spellodrome</a></li>
+                                </ul>
+                            </div>
+                            <li onclick="displayCompany(); return false">
+                                <strong>Company</strong>
+                                <img src="Images/angle-down-solid.svg" width="13px" height="13px" alt="">
+                            </li>
+                            <div id="company" style="display: none;">
+                                <ul>
+                                    <li><a href="">About 3p</a></li>
+                                    <li><a href="">World Maths Day</a></li>
+                                    <li><a href="">Careers</a></li>
+                                    <li><a href="">Awards</a></li>
+                                    <li><a href="">Investors</a></li>
+                                </ul>
+                            </div>
+                        
+                            <li onclick="displaySupport2();return false">
+                                <strong>Support</strong>
+                                <img src="Images/angle-down-solid.svg" width="13px" height="13px" alt="">
+                            </li>
+                            <div id="support2" style="display: none;">
+                                <ul>
+                                    <li><a href="">Product Support</a></li>
+                                    <li><a href="">Technical Support</a></li>
+                                    <li><a href="">Webinars</a></li>
+                                    <li><a href="">Classroom Resources</a></li>
+                                    <li><a href="">Curicullum Alignment</a></li>
+                                    <li><a href="">Blog</a></li>
+                                    <li><a href="">FAQs</a></li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+
+                </div>
+                
+                
+            </div>
+            <div class="displayer">
+                <div class="whowehelp" id = "help">
+                    <div class="column">
+                        <strong>District and School Groups</strong>
+                        <p>Find the solution and support to achieve your goals</p>
+                    
+                    </div>
+                    <div class="column">
+                        <strong>Schools and Teachers</strong>
+                        <p>Find blended learning tools for mathematics and literacy</p>
+                    </div>
+                    <div class="column">
+                        <strong>Parents and Home Users</strong>
+                        <p>Find mathematics and literacy programs to bring love of learning home</p>
+                    </div>
+                    <div class="column">
+                        <img src="Images/3p-navigation-help.svg" width="270px" height="270px" alt="">
+                    </div>
+                </div>
+                <div class="solutions" id = "solutions" style="display: none;">
+                    <div class="subject">
+                        <div class="title">
+                            <strong>By Subject</strong>
+                        </div>
+                        <div class="bysubject">
+                            <ul>
+                                <strong>Mathematics</strong>
+                                <p>Programs for early to secondary learners, covering everything from beginner’s numeracy to geometry, chance, and data.</p>
+                                <strong>Literacy</strong>
+                                <p>Programs for early to secondary learners, covering everything from phonics, letters, and sounds, to etymology, orthography, and phonology.</p>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="solution">
+                        <div class="title">
+                            <strong>By Solution</strong>
+                        </div>
+                        <div class="bysolution">
+                            <div class="column">
+                                <div class="box">
+                                    <img src="Images/logo-mathletics.svg" alt="">
+                                    <strong>Matheletics</strong>
+                                    <p>The comprehensive mathematics program</p>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="box">
+                                    <img src="Images/logo-mathseeds.svg" alt="">
+                                    <strong>Math Seeds</strong>
+                                    <p>The early learners introduction to the world of numeracy</p>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="box">
+                                    <img src="Images/logo-readingeggs.svg" alt="">
+                                    <strong>Matheletics</strong>
+                                    <p>The early learners introduction to the world of literacy</p>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="box">
+                                    <img src="Images/logo-spellodrome.svg" alt="">
+                                    <strong>Spellodrome</strong>
+                                    <p>Spellodrome encourages independent learning and the development of critical spelling awareness</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="support" id = "support">
+                    <div class="column">
+                        <strong>Product Support</strong>
+                        <p>Find the solution and support to achieve your goals</p>
+                        <strong>Technical Support</strong>
+                        <p>Find minimum computer requirements, supported browsers and more</p>
+                        <strong>Webinars</strong>
+                        <p>Find weekly webinars on how to get the most out of our programs</p>
+                    </div>
+                    <div class="column">
+                        <strong>Classroom Resources</strong>
+                        <p>Find a huge range of teacher-picked classroom resources</p>
+                        <strong>Curicullum Alignment</strong>
+                        <p>See how our programs meet the requirements of your local curriculum</p>
+                        <strong>Blog</strong>
+                        <p>Find our library of articles, resources and videos on education</p>
+                    </div>
+                    <div class="column">
+                        <strong>FAQS</strong>
+                        <p>Your most commonly asked questions, answered</p>
+                        <strong>Professional Learning</strong>
+                        <p>Discover our professional learning courses offered in Canada and the United States. </p>
+                    </div>
+                    <div class="column">
+                        <img src="Images/3p-navigation-support.svg" width="270px" height="270px" alt="">
+                    </div>
+                </div>
+                <div class="about" id="about">
+                    <div class="column">
+                        <strong>About 3p</strong>
+                        <p>Find out more about who we are and what we stand for</p>
+                        <strong>World Maths Day</strong>
+                        <p>The World’s Largest Online Maths Competition is back!</p>
+                    </div>
+                    <div class="column">
+                        <strong>Careers</strong>
+                        <p>Join the Team at 3p Learning</p>
+                        <strong>Awards</strong>
+                        <p>Find our list of our recognised achievement</p>
+                    </div>
+                    <div class="column">
+                        <strong>Investors</strong>
+                        <p>Find our investor portal, latest news and how to invest</p>
+                        <strong>Contact</strong>
+                        <p>Get in touch with your local 3P Learning team</p>
+                    </div>
+                    <div class="column">
+                        <img src="Images/3p-navigation-company.svg" width="270px" height="270px" alt="">
+                    </div>
+                </div>
+                
+                        
+            </div>    
+
+        </div>
+
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="mainwritings">
+                <h1>
+                    Get a tailored quote in one business day
+                </h1>
+                <h3>
+                    Let us know what program you’re interested in and for how many students, and we’ll send you a quote tailored to your needs.
+                </h3>
+                <h3>
+                    Parents, get started with our home products <a href="">here</a> .
+                </h3>
+            </div>
+        </div>
+    </main>
+    <div class="form">
+        <div class="container">
+            <form action="">
+                <label for="">PRODUCT INTERESTS</label> <br>
+                <input type="text" placeholder="Select"> <br>
+                <label for="">FIRST NAME</label> <br>
+                <input type="text"> <br>
+                <label for="">LAST NAME</label> <br>
+                <input type="text"> <br>
+                <label for="">EMAIL ADDRESS</label> <br>
+                <input type="text"> <br>
+                <label for="">PHONE NUMBER</label> <br>
+                <input type="text"> <br>
+                <label for="">GRADE LEVEL</label> <br>
+                <input type="text"> <br>
+                <label for="">JOB TITLE</label> <br>
+                <input type="text"> <br>
+                <label for="">COUNTRY</label> <br>
+                <input type="text"> <br> 
+                <label for="">STATE</label> <br>
+                <input type="text"> <br>
+                <label for="">POSTCODE/ZIPCODE</label> <br>
+                <input type="text"> <br>
+                <label for="">SCHOOL NAME</label> <br>
+                <input type="text"> <br>
+                <label for="">NAME OF STUDENT LICENSES</label> <br>
+                <input type="text"> <br>
+                <input type="checkbox" class="checkbox"> 
+                <label for="">I Agree to the 3plearnig Terms and <a href="">Conditions</a></label><br>
+                <input type="checkbox" class="checkbox">
+                <label for="">YES! Sign me up for monthly newsletters, educational content, resources and occasional promotional material <a href="">Conditions</a></label>
+
+            </form>
+            
+        </div>
+    </div>
+</body>
+</html>
