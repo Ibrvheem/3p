@@ -112,6 +112,10 @@ header{
     margin-left: 1rem;
     font-weight: 700;    
 }
+#opendisplay{
+    background-color: white;
+    color: black;
+}
 .mobilemenu{
     display: none;
 }

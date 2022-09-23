@@ -112,6 +112,10 @@ header{
 .mobilemenu{
     display: none;
 }
+#opendisplay{
+    background-color: white;
+    color: black;
+}
 
 /* hamburger */
 .hamburger{
