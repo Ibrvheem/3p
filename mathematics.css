@@ -250,7 +250,7 @@ header{
 
 } */
 .headerimg img{
-    position: relative;
+    position: absolute;
     left: -30%;
     width: 160%;
     max-width: 128rem;
