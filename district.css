@@ -251,7 +251,7 @@ header{
 
 } */
 .headerimg img{
-    position: absolute;
+    /* position: absolute; */
     left: -30%;
     width: 160%;
     max-width: 128rem;
@@ -569,6 +569,13 @@ footer .social{
 
 
 @media screen and (max-width: 430px){
+    *{
+        font-family: 'nunito', sans-serif; 
+        margin: 0;
+        padding: 0; 
+        overflow-x: hidden;
+        scroll-behavior: smooth;                                   
+    }
     .container{
         width: 90%;
     }
