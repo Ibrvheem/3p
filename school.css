@@ -512,7 +512,7 @@ section.second .learnmore{
     padding: 0px 30px;
     box-sizing: border-box;
 }
-.itemwriting h1{
+.writing h1{
     font-size: 2.5rem;
     height: auto;
 }
@@ -773,6 +773,19 @@ footer .social{
     }
     section.second .container .writings h3{
         font-size: 1.2em;
+    }
+    .itemwriting{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0px 30px;
+        box-sizing: border-box;
+    }
+    .itemwriting h1{
+        font-size: 2rem;
+        height: auto;
     }
     .learnmore, .try {
         height: 40px;
