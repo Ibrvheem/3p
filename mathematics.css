@@ -250,7 +250,7 @@ header{
 
 } */
 .headerimg img{
-    position: absolute;
+    position: relative;
     left: -30%;
     width: 160%;
     max-width: 128rem;
@@ -810,15 +810,17 @@ footer .social{
         font-weight: light;
     }
     .headerimg2 img {
-        width: 100%;
         height: auto;
         max-width: 31.5rem;
-        position: relative;
+        z-index: 4;
+        position: absolute;
         left: 20%;
+        top: -30px;
         padding-top: 100px;
         width: 70%;
-        margin: 0 auto;
+        margin: 0 auto;    
     }
+
     main{
         display: flex;
         justify-content: center;
