@@ -141,9 +141,11 @@ header{
   .line {
     fill:none;
     transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-    stroke:white;
     stroke-width:5.5;
     stroke-linecap:round;
+  }
+  #linecolor{
+    stroke:white;
   }
   .ham1 .top {
     stroke-dasharray: 40 139;
@@ -269,7 +271,7 @@ header{
     width: 90%;
     margin: 0 auto;
 }
-main{
+{
     display: flex;
     justify-content: center;
     margin-top: 50px;
@@ -646,12 +648,20 @@ footer .social{
         display: none;
         font-weight: light;
     }
+    .headerimg img {
+        position: relative;
+        /* left: -30%; */
+        width: 160%;
+        max-width: 128rem;
+        height: auto;
+    }
     .headerimg2 img {
-        width: 100%;
         height: auto;
         max-width: 31.5rem;
-        position: relative;
-        left: 20%;
+        /* z-index: 4; */
+        position: absolute;
+        left: 11%;
+        top: -70px;
         padding-top: 100px;
         width: 70%;
         margin: 0 auto;
@@ -716,6 +726,16 @@ footer .social{
         align-items: center;
         justify-content: center;
         margin-top: 2em;
+    }
+    section.teachingCommunity{
+        padding: 3rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    section.teachingCommunity h1{
+        font-size: 1.8em;
+        margin-bottom: 0;
     }
     .button a{
         color: white;

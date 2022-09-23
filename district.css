@@ -143,9 +143,12 @@ header{
   .line {
     fill:none;
     transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-    stroke:white;
+    /* stroke:white; */
     stroke-width:5.5;
     stroke-linecap:round;
+  }
+  #linecolor{
+    stroke: white;
   }
   .ham1 .top {
     stroke-dasharray: 40 139;
@@ -251,7 +254,7 @@ header{
 
 } */
 .headerimg img{
-    position: relative;
+    position: absolute;
     left: -30%;
     width: 160%;
     max-width: 128rem;
@@ -634,10 +637,17 @@ footer .social{
         display: none;
         font-weight: light;
     }
+    .headerimg img{
+        position: relative;
+        /* left: -30%; */
+        width: 160%;
+        max-width: 128rem;
+        height: auto;
+    }
     .headerimg2 img {
         height: auto;
         max-width: 31.5rem;
-        z-index: 4;
+        /* z-index: 4; */
         position: absolute;
         left: 20%;
         top: -30px;

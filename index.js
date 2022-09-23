@@ -16,6 +16,7 @@ let arrowdown3 = document.querySelector("#arrowdown3")
 let arrowdown4 =  document.querySelector("#arrowdown4")
 let secondLogo = document.getElementById("secondlogo")
 let defaultLogo = document.getElementById("defaultlogo")
+let hamBurgerColor = document.querySelector("#linecolor") 
 
 let logo = document.querySelector(".logo")
 
@@ -171,6 +172,7 @@ function navBgColor(event){
         event.target.color = "#green";
         header.style.background = 'white';
         navbar.style.color = "black"
+        hamBurgerColor.style.stroke = "black"
         arrowdown.src = "Images/angle-down-solid-green.svg"
         arrowdown2.src = "Images/angle-down-solid-green.svg"
         arrowdown3.src = "Images/angle-down-solid-green.svg"
@@ -185,6 +187,7 @@ function navBgColor(event){
         secondLogo.style.display = "flex"
         defaultLogo.style.display = "none"
         navbar.style.color = 'white'
+        hamBurgerColor.style.stroke = "white"
         arrowdown.src = "Images/angle-down-solid.svg"
         arrowdown2.src = "Images/angle-down-solid.svg"
         arrowdown3.src = "Images/angle-down-solid.svg"
