@@ -80,10 +80,7 @@ header{
     
 }
 
-.navbar .logo img{
-    width: 160px;
-    height: 39px;
-}
+
 .navbar ul li:hover{
     color: #015f4e;
 }
@@ -436,8 +433,7 @@ section.second .learnmore{
     justify-content: center;
     border-radius: 2em;
     text-align: center;
-    background-color:#015f4e;
-    margin-right: 1rem;
+background-color: #015f4e;    margin-right: 1rem;
     margin-bottom: 10px;
 
 }

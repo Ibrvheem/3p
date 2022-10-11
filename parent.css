@@ -78,10 +78,7 @@ header{
     
 }
 
-.navbar .logo img{
-    width: 160px;
-    height: 39px;
-}
+
 .navbar ul li:hover{
     color: #015f4e;
 }
@@ -315,8 +312,7 @@ section .button a{
     text-decoration: none;
 }
 section .button {
-    background-color: #015f4e;
-    border-radius: 2em;
+background-color:#015f4e;    border-radius: 2em;
     height: 56px;
     width: 203px;
     border: 2px solid #015f4e;
@@ -429,8 +425,7 @@ section.teachingCommunity h1{
     width: 159px;
     height: 56px;
     border-radius: 35px;
-    background-color: #015f4e;
-    margin: 1.5rem 0;
+background-color:#015f4e;    margin: 1.5rem 0;
 
     
 }
@@ -528,8 +523,7 @@ section.second .learnmore{
     justify-content: center;
     border-radius: 2em;
     text-align: center;
-    background-color:#015f4e;
-    margin-left: 1rem;
+background-color: #015f4e;    margin-left: 1rem;
     margin-bottom: 10px;
 
 }
@@ -771,8 +765,7 @@ footer .social{
         justify-content: center;
         border-radius: 2em;
         text-align: center;
-        background-color: #015f4e;
-    }
+    background-color:#015f4e;    }
     section a{
         color: white;
         font-weight: bold;

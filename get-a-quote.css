@@ -108,10 +108,7 @@ header{
     
 }
 
-.navbar .logo img{
-    width: 160px;
-    height: 39px;
-}
+
 .navbar ul li:hover{
     color: #015f4e;
 }

@@ -108,10 +108,7 @@ header{
     
 }
 
-.navbar .logo img{
-    width: 160px;
-    height: 39px;
-}
+
 .navbar ul li:hover{
     color: #015f4e;
 }
@@ -318,8 +315,7 @@ section.intro .container .content{
     justify-content: center;
     border-radius: 2em;
     text-align: center;
-    background-color:#015f4e;
-    margin-left: 1rem;
+background-color: #015f4e;    margin-left: 1rem;
     margin-bottom: 10px;
 
 }
@@ -590,8 +586,7 @@ footer .social{
         justify-content: center;
         border-radius: 2em;
         text-align: center;
-        background-color: #015f4e;
-    }
+    background-color:#015f4e;    }
     section a{
         color: white;
         font-weight: bold;
