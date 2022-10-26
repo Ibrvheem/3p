@@ -247,18 +247,28 @@ section.intro{
     padding-top: 75px;
     display: flex;
     justify-content: center;
-    height: 840.58px;
+    height: 70vh;
+}
+section.intro .container{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: flex-end; */
+}
+section.intro .content{
+    width: 50%;
 }
 section.intro h1{
     height: auto;
-    width: 700px;
+    /* width: 700px; */
+    width: 100%;
     margin-bottom: 1rem;
-    font-weight: 700;
-    font-size: 3rem;
+    font-weight: 600;
+    font-size: 2.4rem;
     padding-top: 3rem;
+    color: #94d341;
 }
 section.intro h1 span{
-    color: #015f4e;
+    color: #EECF47;
 }
 section.intro p{
     width:451px;
@@ -272,6 +282,12 @@ section.intro ul.buttons li{
     
   
 }
+.side-image{
+    width: 50%;
+    /* height: 100vh; */
+    display: flex;
+    align-items: flex-end;
+}
 .buttons{
     display: flex;
 }
@@ -283,7 +299,7 @@ section.intro ul.buttons li{
     justify-content: center;
     border-radius: 2em;
     text-align: center;
-background-color: #015f4e;    margin-left: 1rem;
+background-color: #94d341;    margin-left: 1rem;
     margin-bottom: 10px;
 
 }
@@ -359,7 +375,7 @@ section.teachingCommunity h1{
     width: 159px;
     height: 56px;
     border-radius: 35px;
-    background-color: #015f4e;
+    background-color: #94d341;
     margin: 1.5rem 0;
 
     
@@ -381,11 +397,11 @@ section.teachingCommunity h1{
 
 }
 section .button{
-    background-color:#015f4e ;
+    background-color:#94d341 ;
     border-radius: 2em;
     height: 56px;
     width: 203px;
-    border: 2px solid #015f4e;
+    border: 2px solid #94d341;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -406,7 +422,7 @@ section .button{
     box-sizing: border-box;
 }
 .writings{
-    width: 50%;
+    width: 55%;
     height: auto;
     padding: 50px;
     box-sizing: border-box;
@@ -415,18 +431,20 @@ section .button{
     flex-direction: column;
 }
 .image{
-    width: 50%;
+    width: 45%;
     height: auto;
     display: flex;
     align-items: center;
 }
 .writings h4{
-    color: #015f4e;
+    color: #EECF47;
 }
 .writings h2{
     font-size: 2em;
     font-weight: light;
     margin: 1em 0em;
+    color: #94d341;
+
 }
 .writings h3{
     font-size: 1.5em;
@@ -597,7 +615,7 @@ footer .socials{
 footer .social{
     margin-left: 0.75em;
 }
-@media screen and (max-width: 430px){
+@media screen and (max-width: 850px){
     .container{
         width: 90%;
     }
@@ -655,12 +673,7 @@ footer .social{
     #educators,#subject2,#solution2,#company,#support2{
         display: none;
         font-weight: light;
-    }
- 
-
-
-
-    
+    }    
     .intro .container h1{
         font-size: 1.7em;
     }
@@ -709,9 +722,6 @@ footer .social{
         margin-top: 5px;
         margin-bottom: 20px;
     }
-
-
-
     .backgrounddivider .container .icons .item{
         width: 100%;
     }
@@ -725,11 +735,28 @@ footer .social{
         font-size: 1.8em;
         margin-bottom: 0;
     }
+    section.intro{
+        height: auto;
+    }
+    section.intro .container{
+        flex-direction: column;
+    }
+    section.intro .content{
+        width: 100%;
+        height: auto;
+    }
+    section.intro .side-image{
+        width: 100%;
+    }
+
     section.intro p{
         width:100%;
         /* width: 68.75%; */
         margin: 2rem 0;
         height: auto;
+    }
+    .sectionheader h1{
+        font-size: 1.8rem;
     }
     .sectionheader h2{
         font-size: 1.8em;
@@ -757,11 +784,9 @@ footer .social{
     font-size: 0.76em;
     }
     section .button{
-        background-color:#015f4e ;
         border-radius: 2em;
         height: 40px;
         width: 150px;
-        border: 2px solid #015f4e;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -804,13 +829,12 @@ footer .social{
     .learnmore, .try {
         height: 40px;
         width: 120px;
-        background-color: red;
         display: flex;
         align-items: center;
         justify-content: center;
         border-radius: 2em;
         text-align: center;
-    background-color:#015f4e;    }
+    }
     section a{
         color: white;
         font-weight: bold;
