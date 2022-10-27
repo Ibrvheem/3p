@@ -478,6 +478,7 @@ section.first .container{
     justify-content: center;
 
 }
+
 section.second{
     display: flex;
     justify-content: center;
@@ -818,6 +819,9 @@ footer .social{
         background-position: bottom left;
         background-size: 180%;
         padding-bottom: 2rem;
+    }
+    section.first .reverse{
+        flex-direction: column-reverse;
     }
     section.second .items{
         width: 100%;
