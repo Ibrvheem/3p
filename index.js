@@ -154,17 +154,17 @@ let logo = document.querySelector(".logo")
 //     }
 //     console.log("sub")
 // }
-// function displays(){
-//     console.log("working")
-//     if(openDisplay.style.display === "none"){
-//         openDisplay.style.display = "flex"
-//     }else if(openDisplay.style.display === "flex"){
-//         openDisplay.style.display = "none"
-//     }else{
-//         openDisplay.style.display = "none"
-//     }
-//     console.log("sub")
-// }
+function displays(){
+    console.log("working")
+    if(openDisplay.style.display === "none"){
+        openDisplay.style.display = "flex"
+    }else if(openDisplay.style.display === "flex"){
+        openDisplay.style.display = "none"
+    }else{
+        openDisplay.style.display = "none"
+    }
+    console.log("sub")
+}
 
 function navBgColor(event){
     let scrollValue = window.scrollY;
