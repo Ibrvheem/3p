@@ -397,6 +397,8 @@ section.teachingCommunity h1{
 .container .item  img{
     height: 270px;
     width: 270px;
+    object-fit: cover;
+    object-position: center;
     border-radius: 20px;
     margin-bottom: 2rem;
 
@@ -567,6 +569,8 @@ section a{
 .awards .container{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+
 }
 .award img{
     height: 54px;
